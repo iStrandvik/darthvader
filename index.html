@@ -11,7 +11,6 @@
     <title>Darth Vader</title>
 </head>
 <body>
-
 <!--Main-->
 <div class="main">
     <!--Main content-->
@@ -159,12 +158,38 @@
         </div>
         <!--Button-->
         <div>
-            <button class="contactform">
+            <button class="contactform" onclick="javascript:PopUpShow()">
                 Зв'язатись зі мною
             </button>
         </div>
     </aside>
 </div>
 
+    <div class="contact-form-popup" id="popup1">
+        <div class="contact-form-popup-content">
+        <form action="">
+            <p>Ваше имя: <input type="text" name="name" id="name"></p>
+            <p>Ваш телефон: <input type="text" name="phone" id="phone"></p>
+        </form>
+        <button class="close-button" type="reset" onclick="javascript:PopUpHide()" ></button>
+        </div>
+        
+    </div>
+
 </body>
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
 </html>
