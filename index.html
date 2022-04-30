@@ -164,22 +164,20 @@
         </div>
     </aside>
 </div>
-
     <div class="contact-form-popup" id="popup1">
         <div class="contact-form-popup-content">
         <form action="">
-            <p>Ваше имя: <input type="text" name="name" id="name"></p>
-            <p>Ваш телефон: <input type="text" name="phone" id="phone"></p>
+            <p class="name_input_text">Ваше ім'я Джедай: <input class="input_text" type="text" name="name" id="name"></p>
+            <p class="name_input_text">Ваш телефон: <input class="input_text" type="text" name="phone" id="phone"></p>
+            <button class="send_info" type="submit">Долучитись!</button>
         </form>
-        <button class="close-button" type="reset" onclick="javascript:PopUpHide()" ></button>
+        <button class="close-button" type="reset" onclick="javascript:PopUpHide()"></button>
         </div>
-        
     </div>
 
 </body>
 <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
 <script>
-
     //Функция отображения PopUp
     function PopUpShow(){
         $("#popup1").show();

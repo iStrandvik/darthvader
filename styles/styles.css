@@ -13,7 +13,7 @@ body {
 .main_content {
     background: #E5E5E5;
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    padding: 105px 90px;
+    padding: 50px 90px;
 }
 /* about styles */
 .about {
@@ -226,7 +226,7 @@ body {
     line-height: 24px;
     color: #FFFFFF;
 }
-
+/* button styles */
 .contact-form-popup {
     width: 100%;
     height: 100%;
@@ -236,32 +236,50 @@ body {
     position: fixed;
     top: 0px;
 }
-
 .contact-form-popup .contact-form-popup-content {
-    margin:40px auto 0px auto;
-    width:50%;
-    height: 50%;
-    padding:10px;
+    margin: 40px auto 0px auto;
+    width: 30%;
+    height: 15%;
+    padding: 10px;
     background-color: #c5c5c5;
-    border-radius:5px;
+    border-radius: 10px;
     box-shadow: 0px 0px 10px #000;
 }
-
 .close-button {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     position: fixed;
     top: 10px;
-    right: 10px;
-    background-image: url("https://w7.pngwing.com/pngs/51/285/png-transparent-mon-swastika-buddhism-croix-gammee-nazie-buddhism-angle-emblem-text.png");
-    background-size: cover ;
+    right: 20px;
+    background-image: url("https://cdn.create.vista.com/api/media/medium/19937699/stock-vector-crossed-lightsabers-vector-illustration?token=");
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    cursor: pointer;
 }
-
-.cb-img {
-    width: 50px;
-    height: 50px;
+.name_input_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    font-weight: bold;
 }
-
+.input_text {
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px #000;
+}
+.send_info {
+    margin: 10px auto;
+    display: block;
+    background-color: #565e6a;
+    color: #000000;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
 .contactform {
     margin: 40px auto;
     display: block;
@@ -270,4 +288,11 @@ body {
     height: 30px;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 10px;
+}
+.contactform:hover, .send_info:hover {
+    background-color: #909090;
+}
+.contactform:active, .send_info:active {
+    box-shadow: inset 1px 1px 10px -1px;
 }
