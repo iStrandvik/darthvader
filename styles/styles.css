@@ -32,11 +32,24 @@ body {
     font-weight: 700;
     font-size: 45px;
     line-height: 55px;
-    color: #000000;
     margin-bottom: 25px;
-    background: linear-gradient(to right, rgb(0, 0, 0), rgb(139, 139, 139), rgb(112, 112, 112), rgb(133, 134, 133), rgb(112, 112, 112), rgb(197, 196, 194), rgb(0, 0, 0));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(34, 33, 33), rgb(112, 112, 112), rgb(133, 134, 133), rgb(112, 112, 112), rgb(73, 72, 71), rgb(0, 0, 0));
+    background-size: 400% 400%;
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 20s ease infinite;
+    animation: rainbow 20s ease infinite;
+}
+@-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+  }
+@keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
 }
 .about_description {
     font-style: normal;
