@@ -20,7 +20,7 @@ def styles(path):
 def img(path):
     return send_from_directory("./img", path)
 
-@app.route("/sent-contact-form", methods=["POST"])
+@app.route("/sent_contact_form", methods=["POST"])
 def contact_form():
     name = request.form.get("name")
     phone = request.form.get("phone")
