@@ -27,9 +27,9 @@ def contact_form():
 
     bot_send_message = "https://api.telegram.org/bot5354006189:AAGZuON0rsvCC9oyvEcpM89XP9VxdV9xKdA/sendMessage"
     chat_id = "-608069909"
-    text = " *Новый перебезчик на темную сторону\!* \n" + \
-               "Его имя:      ***{0}*** \n" + \
-               "Его телефон:  ***{1}***"
+    text = " *Свіжа кров на темному боці\!* \n" + \
+               "Його ім'я:      ***{0}*** \n" + \
+               "Його телефон:  ***{1}***"
 
     headers = {
         "Content-Type": "application/json"
